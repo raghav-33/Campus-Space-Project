@@ -1,22 +1,3 @@
-'''from fastapi import APIRouter
-from app.database import get_connection
-
-router = APIRouter()
-
-@router.get("/rooms")
-def get_rooms():
-
-    conn = get_connection()
-    cursor = conn.cursor(dictionary=True)
-
-    cursor.execute("SELECT * FROM rooms")
-    rooms = cursor.fetchall()
-
-    cursor.close()
-    conn.close()
-
-    return rooms'''
-
 from fastapi import APIRouter, Depends, HTTPException, Query
 from typing import List
 from app.database import get_db
@@ -79,7 +60,7 @@ def check_room_status(
         cursor.execute(status_query, (room_id, day, check_time))
         lecture_data = cursor.fetchone()
 
-        # 🚨 Step 3: Fetch the FULL Daily Schedule
+        #  Step 3: Fetch the FULL Daily Schedule
         schedule_query = """
             SELECT s.subject_name, 
                    CAST(t.start_time AS CHAR) as start_time, 
@@ -132,7 +113,7 @@ def check_room_status(
                 "cctv": bool(room_data['cctv']),
                 "projector": bool(room_data['projector'])
             },
-            "schedule": daily_schedule  # 🚨 Send the formatted schedule to React!
+            "schedule": daily_schedule  #  Send the formatted schedule to React!
         }
         
     except Exception as e:
