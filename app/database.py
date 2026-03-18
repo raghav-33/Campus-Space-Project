@@ -1,14 +1,3 @@
-'''import mysql.connector
-
-def get_connection():
-    connection = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="Raghav2005@",
-    database="collagedb"
-    )
-    return connection'''
-    
 import os
 import mysql.connector
 from dotenv import load_dotenv
