@@ -3,21 +3,32 @@ Campus Space is an intelligent, full-stack room management system designed for c
 
 🚀 Key Features
 1.Live Status Tracking: Real-time "FREE" or "OCCUPIED" status based on the college timetable.
+
 2.Infrastructure Insights: View exact counts of working ACs, Fans, and Computers for every room.
+
 3.Daily Schedule: A dynamic timeline showing all classes scheduled for the day.
+
 4.Quick-Book: Instantly discover 3 rooms that are currently empty on campus.
+
 5.Modern UI: Built with React, Tailwind CSS, and Framer Motion for smooth animations.
 
 🛠️ Tech Stack
 Frontend
+
 React.js (Vite)
+
 Tailwind CSS (Styling)
+
 Lucide React (Icons)
+
 Framer Motion (Animations)
 
 Backend
+
 FastAPI (Python)
+
 MySQL (Database)
+
 Uvicorn (ASGI Server)
 
 📋 Prerequisites
