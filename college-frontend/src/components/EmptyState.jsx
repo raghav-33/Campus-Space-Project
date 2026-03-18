@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { MapPin } from 'lucide-react';
 
-// 🚨 Notice we removed the mockDatabase import and added 'quickRooms' as a prop
+
 export default function EmptyState({ onSelect, quickRooms }) {
     return (
         <motion.div
