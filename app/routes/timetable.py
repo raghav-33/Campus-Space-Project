@@ -9,7 +9,7 @@ router = APIRouter(tags=["Timetable"])
 def get_timetable(conn = Depends(get_db)):
     cursor = conn.cursor(dictionary=True)
 
-    # 🛠️ UPDATED QUERY: Changed t.room_id to t.room_number in the JOIN
+    
     query = """
     SELECT t.id,
            r.room_number,
