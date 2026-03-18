@@ -23,7 +23,7 @@ class Equipment(BaseModel):
     cctv: bool
     projector: bool
 
-# 🚨 NEW: Schema for a single class on the schedule
+
 class ScheduleItem(BaseModel):
     time: str
     subject: str
@@ -39,4 +39,4 @@ class RoomStatus(BaseModel):
     checked_day: str
     checked_time: str
     equipment: Optional[Equipment] = None
-    schedule: List[ScheduleItem] = []  # 🚨 NEW: Added schedule list
+    schedule: List[ScheduleItem] = []  
