@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(title="Campus Space AI")
 
-# 🚨  This block allows your React frontend to connect!
+# This block allows your React frontend to connect!
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  
